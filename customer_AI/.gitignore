@@ -1,0 +1,65 @@
+# 基本的な無視項目
+output.txt
+node_modules
+dist
+.mastra
+*.db
+*.db-*
+
+# Next.js関連
+.next/
+out/
+build/
+.vercel/
+next-env.d.ts
+
+# 環境変数
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local
+
+# ログファイル
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# キャッシュ
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+.yarn-integrity
+
+# エディタ関連
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# テスト関連
+coverage/
+.nyc_output/
+
+# TypeScript関連
+*.tsbuildinfo
+
+# その他
+.DS_Store
+*.pem
+.cache/

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 240, 240, 240;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-200 text-gray-800 font-medium rounded-lg shadow-md hover:bg-gray-300 transition-colors;
+  }
+  
+  .protect-btn {
+    @apply px-6 py-3 bg-protect-primary text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors;
+  }
+  
+  .reuse-btn {
+    @apply px-6 py-3 bg-reuse-primary text-white font-medium rounded-lg shadow-md hover:bg-amber-600 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-md;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold mb-6 pb-2 border-b-2;
+  }
+  
+  .protect-section-title {
+    @apply section-title border-protect-primary;
+  }
+  
+  .reuse-section-title {
+    @apply section-title border-reuse-primary;
+  }
+}

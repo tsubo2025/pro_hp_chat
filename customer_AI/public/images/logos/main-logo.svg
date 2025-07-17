@@ -1,0 +1,8 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="200" height="60" fill="#ffffff" rx="5" ry="5" stroke="#cccccc" stroke-width="1"/>
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333" font-weight="bold">プロテクト × リユース</text>
+  <circle cx="30" cy="30" r="15" fill="#4a86e8"/>
+  <text x="30" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">P</text>
+  <circle cx="170" cy="30" r="15" fill="#f6b26b"/>
+  <text x="170" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffffff" font-weight="bold">R</text>
+</svg>
