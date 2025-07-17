@@ -30,10 +30,10 @@ export default function Footer({ type = 'main' }: FooterProps) {
               {type === 'reuse' && 'リユース三昧'}
               {type === 'main' && 'プロテクトサービス × リユース三昧'}
             </h3>
-            <p className="text-sm text-gray-600 mb-2">〒123-4567</p>
-            <p className="text-sm text-gray-600 mb-2">東京都〇〇区〇〇町1-2-3</p>
-            <p className="text-sm text-gray-600 mb-2">TEL: 03-1234-5678</p>
-            <p className="text-sm text-gray-600">営業時間: 9:00〜18:00（平日）</p>
+            <p className="text-sm text-gray-600 mb-2">〒693-0511</p>
+            <p className="text-sm text-gray-600 mb-2">島根県出雲市佐田町</p>
+            <p className="text-sm text-gray-600 mb-2">TEL: 080-3577-3848</p>
+            <p className="text-sm text-gray-600">営業時間: 10：00〜18:00（平日）</p>
           </div>
 
           {/* サービスリンク */}
