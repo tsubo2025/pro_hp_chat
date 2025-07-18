@@ -51,17 +51,23 @@ const diagnoseProblem = createStep({
     }
     `;
 
-    const response = await agent.complete([
+    // streamメソッドを使用してエージェントと対話
+    const response = await agent.stream([
       {
         role: 'user',
         content: prompt,
       },
     ]);
 
+    // レスポンステキストを収集
+    let responseText = '';
+    for await (const chunk of response.textStream) {
+      responseText += chunk;
+    }
+
     try {
       // JSONレスポンスをパース
-      const responseText = response.text;
-      const jsonMatch = responseText.match(/\\{[\\s\\S]*?\\}/);
+      const jsonMatch = responseText.match(/\{[\s\S]*?\}/);
 
       if (!jsonMatch) {
         // JSONが見つからない場合はデフォルト値を返す
@@ -117,7 +123,7 @@ const provideSolution = createStep({
     }
 
     // ツールを使用して解決策を取得
-    const toolResponse = await agent.complete([
+    const response = await agent.stream([
       {
         role: 'user',
         content: `以下の問題に対する解決策を提供してください:
@@ -129,8 +135,14 @@ const provideSolution = createStep({
       },
     ]);
 
+    // レスポンステキストを収集
+    let responseText = '';
+    for await (const chunk of response.textStream) {
+      responseText += chunk;
+    }
+
     return {
-      response: toolResponse.text,
+      response: responseText,
     };
   },
 });
