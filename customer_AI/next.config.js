@@ -11,6 +11,18 @@ const nextConfig = {
       },
     ];
   },
+  // 外部URLからのモジュールロードを許可
+  webpack: (config, { isServer }) => {
+    // ChromaDBの外部URLからのロードを許可
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+      os: false,
+    };
+
+    return config;
+  },
 };
 
 module.exports = nextConfig;

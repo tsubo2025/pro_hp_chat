@@ -8,21 +8,13 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header type="main" />
-      
+
       <div className="flex-grow">
         {/* ヒーローセクション */}
         <section className="bg-gradient-to-r from-protect-primary to-reuse-primary text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">プロテクトサービス × リユース三昧</h1>
             <p className="text-xl mb-8">IT関連の様々なサービスをご提供しています</p>
-            <div className="flex flex-col md:flex-row justify-center gap-4">
-              <Link href="/protect-service" className="bg-white text-protect-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                🔧 プロテクトサービスへ
-              </Link>
-              <Link href="/reuse" className="bg-white text-reuse-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                🛍️ リユース三昧へ
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -30,7 +22,7 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">2つのサービスをご提供しています</h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               {/* プロテクトサービス */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -57,7 +49,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              
+
               {/* リユース三昧 */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="bg-reuse-primary text-white p-6">
@@ -100,7 +92,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      
+
       <Footer type="main" />
     </main>
   );

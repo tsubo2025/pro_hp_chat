@@ -37,15 +37,14 @@ export default function ChatBot() {
     setIsLoading(true);
 
     try {
-      // Mastra APIにリクエスト
-      const response = await fetch('/api/mastra/pc-support', {
+      // 新しいRAG APIにリクエスト
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          description: userInput,
-          userLevel: 'beginner'
+          message: userInput
         }),
       });
 
