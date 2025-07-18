@@ -25,9 +25,8 @@ let isInitialized = false;
 // テキストの埋め込みを取得
 async function getEmbedding(text: string): Promise<number[]> {
     try {
-        const result = await embeddingModel.embedContent({
-            content: { parts: [{ text }] },
-        });
+        // 正しい形式でEmbedding APIを呼び出す
+        const result = await embeddingModel.embedContent(text);
         return result.embedding.values;
     } catch (error) {
         console.error('Error getting embedding:', error);
