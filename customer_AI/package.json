@@ -7,8 +7,8 @@
     "dev": "concurrently \"npm run next:dev\" \"npm run mastra:dev\"",
     "next:dev": "next dev",
     "mastra:dev": "node mastra-server.js",
-    "build": "next build && mastra build",
-    "start": "concurrently \"next start\" \"node mastra-server.js\"",
+    "build": "next build",
+    "start": "next start",
     "mastra:start": "node mastra-server.js"
   },
   "keywords": [],

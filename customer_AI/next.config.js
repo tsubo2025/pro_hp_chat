@@ -2,14 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Mastraとの連携のためにAPIルートを有効化
+  // 本番環境ではリライトルールを無効化
   async rewrites() {
-    return [
-      {
-        source: '/api/mastra/:path*',
-        destination: 'http://localhost:3001/api/:path*', // Mastra APIのエンドポイント
-      },
-    ];
+    // 開発環境でのみMastraとの連携を有効化
+    if (process.env.NODE_ENV === 'development') {
+      return [
+        {
+          source: '/api/mastra/:path*',
+          destination: 'http://localhost:3001/api/:path*', // Mastra APIのエンドポイント
+        },
+      ];
+    }
+    return [];
   },
   // 外部URLからのモジュールロードを許可
   webpack: (config, { isServer }) => {
