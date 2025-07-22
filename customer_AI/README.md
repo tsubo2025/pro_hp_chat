@@ -41,23 +41,27 @@ PCサポートチャットボット「サポートちゃん」を搭載した、
 ### インストール手順
 
 1. リポジトリをクローン
+
    ```bash
    git clone [リポジトリURL]
    cd customer_AI
    ```
 
 2. 依存関係のインストール
+
    ```bash
    npm install
    ```
 
 3. 環境変数の設定
+
    ```bash
    cp .env.example .env
    # .envファイルを編集して必要な環境変数を設定
    ```
 
 4. 開発サーバーの起動
+
    ```bash
    npm run dev
    ```
@@ -114,6 +118,7 @@ customer_AI/
 ### 一般的なホスティングへのデプロイ
 
 1. プロジェクトをビルド
+
    ```bash
    npm run build
    ```
