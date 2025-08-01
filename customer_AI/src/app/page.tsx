@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import HeroSlideshow from '@/components/ui/HeroSlideshow';
 
 export default function Home() {
   return (
@@ -11,8 +12,18 @@ export default function Home() {
 
       <div className="flex-grow">
         {/* ヒーローセクション */}
-        <section className="bg-gradient-to-r from-protect-primary to-reuse-primary text-white py-20">
-          <div className="container mx-auto px-4 text-center">
+        <section className="relative text-white py-20">
+          <div className="absolute inset-0 w-full h-full">
+            <HeroSlideshow
+              images={[
+                '/images/hero/slide1.jpg',
+                '/images/hero/slide2.jpg',
+                '/images/hero/slide3.jpg',
+              ]}
+              type="main"
+            />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">プロテクトサービス × リユース三昧</h1>
             <p className="text-xl mb-8">IT関連の様々なサービスをご提供しています</p>
           </div>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ChatBot from '@/components/ui/ChatBot';
+import HeroSlideshow from '@/components/ui/HeroSlideshow';
 
 export default function ProtectServiceHome() {
     return (
@@ -12,8 +13,18 @@ export default function ProtectServiceHome() {
 
             <div className="flex-grow">
                 {/* ヒーローセクション */}
-                <section className="bg-protect-primary text-white py-20">
-                    <div className="container mx-auto px-4 text-center">
+                <section className="relative text-white py-20">
+                    <div className="absolute inset-0 w-full h-full">
+                        <HeroSlideshow
+                            images={[
+                                '/images/protect/slide1.jpg',
+                                '/images/protect/slide2.jpg',
+                                '/images/protect/slide3.jpg',
+                            ]}
+                            type="protect"
+                        />
+                    </div>
+                    <div className="container mx-auto px-4 text-center relative z-10">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">プロテクトサービス</h1>
                         <p className="text-xl mb-8">HP制作・パソコン保守・プログラミング相談のサービスをご提供</p>
                         <Link href="/protect-service/contact" className="bg-white text-protect-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">

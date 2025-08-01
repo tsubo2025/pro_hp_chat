@@ -52,25 +52,13 @@ export default function Header({ type = 'main' }: HeaderProps) {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              {/* ロゴ画像 */}
+              {/* テキストロゴ */}
               <div className="mr-3">
                 {type === 'protect' && (
-                  <Image
-                    src="/images/logos/protect-logo.svg"
-                    alt="プロテクトサービス"
-                    width={150}
-                    height={45}
-                    priority
-                  />
+                  <h1 className="text-2xl font-bold">プロテクトサービス</h1>
                 )}
                 {type === 'reuse' && (
-                  <Image
-                    src="/images/logos/reuse-logo.svg"
-                    alt="リユース三昧"
-                    width={150}
-                    height={45}
-                    priority
-                  />
+                  <h1 className="text-2xl font-bold">リユース三昧</h1>
                 )}
                 {type === 'main' && (
                   <Image
@@ -118,7 +106,7 @@ export default function Header({ type = 'main' }: HeaderProps) {
               </div>
               <div>
                 <div className="text-xs text-gray-500">電話番号はこちら</div>
-                <div className="text-sm font-bold text-gray-800">03-1234-5678</div>
+                <div className="text-sm font-bold text-gray-800">080-3577-3848</div>
               </div>
             </div>
           </div>
