@@ -27,6 +27,12 @@ const nextConfig = {
 
     return config;
   },
+  // 本番環境での画像最適化を無効化（必要に応じて）
+  images: {
+    unoptimized: true,
+  },
+  // 静的エクスポート設定（必要に応じて）
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
