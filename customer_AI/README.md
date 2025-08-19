@@ -136,6 +136,6 @@ customer_AI/
 
 ## 連絡先
 
-- 開発者: [dejitsubo]
-- メール: []
-- ウェブサイト: [ウェブサイトURL]
+- 開発者: tsubo2025
+- メール: tsubotube2021@gmail.com
+- ウェブサイト: https://github.com/tsubo2025/pro_hp_chat
