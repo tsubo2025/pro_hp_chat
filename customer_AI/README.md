@@ -136,6 +136,6 @@ customer_AI/
 
 ## 連絡先
 
-- 開発者: [dijitsubo]
+- 開発者: [dejitsubo]
 - メール: []
 - ウェブサイト: [ウェブサイトURL]
