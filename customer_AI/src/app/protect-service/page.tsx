@@ -17,9 +17,9 @@ export default function ProtectServiceHome() {
                     <div className="absolute inset-0 w-full h-full">
                         <HeroSlideshow
                             images={[
-                                '/images/protect/slide1.jpg',
-                                '/images/protect/slide2.jpg',
-                                '/images/protect/slide3.jpg',
+                                '/images/protect/slide_win10_support.png',
+                                '/images/protect/slide_pc_repair.png',
+                                '/images/protect/slide_ai_training.png',
                             ]}
                             type="protect"
                         />
