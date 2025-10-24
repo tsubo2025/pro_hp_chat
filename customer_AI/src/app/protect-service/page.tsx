@@ -13,7 +13,7 @@ export default function ProtectServiceHome() {
 
             <div className="flex-grow">
                 {/* ヒーローセクション */}
-                <section className="relative text-white h-96">
+                <section className="relative text-white h-80">
                     <div className="absolute inset-0 w-full h-full">
                         <HeroSlideshow
                             images={[
