@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { PROTECT_SLIDES } from '@/config/slideshow';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ChatBot from '@/components/ui/ChatBot';
@@ -16,11 +17,7 @@ export default function ProtectServiceHome() {
                 <section className="relative text-white h-80">
                     <div className="absolute inset-0 w-full h-full">
                         <HeroSlideshow
-                            images={[
-                                '/images/protect/slide_win10_support.png',
-                                '/images/protect/slide_pc_repair.png',
-                                '/images/protect/slide_ai_training.png',
-                            ]}
+                            images={PROTECT_SLIDES}
                             type="protect"
                         />
                     </div>

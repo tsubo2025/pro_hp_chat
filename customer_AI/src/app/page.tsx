@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { MAIN_SLIDES } from '@/config/slideshow';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSlideshow from '@/components/ui/HeroSlideshow';
@@ -12,14 +13,10 @@ export default function Home() {
 
       <div className="flex-grow">
         {/* ヒーローセクション */}
-        <section className="relative text-white py-20">
+        <section className="relative text-white h-80">
           <div className="absolute inset-0 w-full h-full">
             <HeroSlideshow
-              images={[
-                '/images/hero/slide1.jpg',
-                '/images/hero/slide2.jpg',
-                '/images/hero/slide3.jpg',
-              ]}
+              images={MAIN_SLIDES}
               type="main"
             />
           </div>
