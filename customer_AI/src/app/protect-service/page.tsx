@@ -24,13 +24,7 @@ export default function ProtectServiceHome() {
                             type="protect"
                         />
                     </div>
-                    <div className="container mx-auto px-4 text-center relative z-10">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">プロテクトサービス</h1>
-                        <p className="text-xl mb-8">HP制作・パソコン保守・プログラミング相談のサービスをご提供</p>
-                        <Link href="/protect-service/contact" className="bg-white text-protect-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                            お問い合わせ
-                        </Link>
-                    </div>
+
                 </section>
 
                 {/* サービス紹介セクション */}
