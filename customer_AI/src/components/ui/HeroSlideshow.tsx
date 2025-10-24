@@ -76,7 +76,7 @@ export default function HeroSlideshow({
                                 alt={`スライド ${slideIndex + 1} - 1`}
                                 fill
                                 sizes="50vw"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                         {/* 2枚目の画像 (右側) */}
@@ -86,7 +86,7 @@ export default function HeroSlideshow({
                                 alt={`スライド ${slideIndex + 1} - 2`}
                                 fill
                                 sizes="50vw"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                     </div>
