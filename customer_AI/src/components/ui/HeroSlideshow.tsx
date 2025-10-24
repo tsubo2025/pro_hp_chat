@@ -47,7 +47,7 @@ export default function HeroSlideshow({
                     <img
                         src={image}
                         alt={`スライド ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                     />
                     {/* 画像の上に半透明のオーバーレイをかけて、テキストの視認性を向上させる */}
                     <div className="absolute inset-0 bg-black opacity-30" />
