@@ -138,7 +138,7 @@ export default function ProtectServicesPage() {
                                         <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                                     </svg>
                                 </div>
-                                <h2 className="text-3xl font-bold">パソコン保守</h2>
+                                <h2 className="text-3xl font-bold">パソコン修理・保守</h2>
                             </div>
 
                             <p className="text-lg text-gray-700 mb-8">
@@ -175,6 +175,13 @@ export default function ProtectServicesPage() {
                                         <div>
                                             <h4 className="font-bold mb-1">リモートサポート</h4>
                                             <p className="text-gray-600">遠隔操作によるサポートで、お客様の元に訪問することなく、迅速に問題解決をサポートします。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">05.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">その他の相談（AItuber関連など）</h4>
+                                            <p className="text-gray-600">AItuberの活用や動画制作、AI技術の応用に関するご相談も承ります。お気軽にご相談ください。</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -236,7 +243,7 @@ export default function ProtectServicesPage() {
                                         <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                     </svg>
                                 </div>
-                                <h2 className="text-3xl font-bold">プログラミング相談</h2>
+                                <h2 className="text-3xl font-bold">AI活用・プログラミング相談</h2>
                             </div>
 
                             <p className="text-lg text-gray-700 mb-8">
@@ -273,6 +280,13 @@ export default function ProtectServicesPage() {
                                         <div>
                                             <h4 className="font-bold mb-1">技術選定サポート</h4>
                                             <p className="text-gray-600">プロジェクトに最適な言語やフレームワーク、ツールの選定をサポートします。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">05.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">その他の相談（AItuber関連など）</h4>
+                                            <p className="text-gray-600">AItuberの活用や動画制作、AI技術の応用に関するご相談も承ります。お気軽にご相談ください。</p>
                                         </div>
                                     </li>
                                 </ul>

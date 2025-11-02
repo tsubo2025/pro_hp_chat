@@ -38,7 +38,7 @@ export default function ProtectServiceHome() {
                                     </svg>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-3">HP制作</h3>
+                                    <h3 className="text-xl font-bold mb-3">HP・LP制作</h3>
                                     <p className="text-gray-600 mb-4">
                                         お客様のニーズに合わせた魅力的なウェブサイトを制作します。レスポンシブデザインで、スマートフォンやタブレットにも対応。SEO対策も万全です。
                                     </p>
@@ -56,7 +56,7 @@ export default function ProtectServiceHome() {
                                     </svg>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-3">パソコン保守</h3>
+                                    <h3 className="text-xl font-bold mb-3">パソコン修理・保守</h3>
                                     <p className="text-gray-600 mb-4">
                                         定期的なメンテナンスやトラブル対応、セキュリティ対策など、お客様のIT環境を安全かつ効率的に維持します。リモートサポートも可能です。
                                     </p>
@@ -74,11 +74,47 @@ export default function ProtectServiceHome() {
                                     </svg>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-3">プログラミング相談</h3>
+                                    <h3 className="text-xl font-bold mb-3">AI・プログラミング相談</h3>
                                     <p className="text-gray-600 mb-4">
-                                        システム開発やプログラミングに関する技術的な相談に対応します。初心者から上級者まで、幅広いレベルの方をサポートします。
+                                        AIやプログラミングに関する技術的な相談に対応します。初心者から上級者まで、幅広いレベルの方をサポートします。
                                     </p>
                                     <Link href="/protect-service/services#programming" className="text-protect-primary font-medium hover:underline">
+                                        詳細を見る →
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* その他の相談（AItuber関連など） */}
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden" id="aituber">
+                                <div className="h-40 bg-protect-secondary flex items-center justify-center">
+                                    <svg className="w-20 h-20 text-protect-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V7h2v3z" />
+                                    </svg>
+                                </div>
+                                <div className="p-6">
+                                    <h3 className="text-xl font-bold mb-3">その他の相談（AItuber関連など）</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        AItuberの活用や動画制作、AI技術の応用に関するご相談も承ります。お気軽にご相談ください。
+                                    </p>
+                                    <Link href="/protect-service/services#aituber" className="text-protect-primary font-medium hover:underline">
+                                        詳細を見る →
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* その他の相談（AItuber関連など） */}
+                            <div className="bg-white rounded-xl shadow-lg overflow-hidden" id="aituber">
+                                <div className="h-40 bg-protect-secondary flex items-center justify-center">
+                                    <svg className="w-20 h-20 text-protect-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V7h2v3z" />
+                                    </svg>
+                                </div>
+                                <div className="p-6">
+                                    <h3 className="text-xl font-bold mb-3">その他の相談（AItuber関連など）</h3>
+                                    <p className="text-gray-600 mb-4">
+                                        AItuberの活用や動画制作、AI技術の応用に関するご相談も承ります。お気軽にご相談ください。
+                                    </p>
+                                    <Link href="/protect-service/services#aituber" className="text-protect-primary font-medium hover:underline">
                                         詳細を見る →
                                     </Link>
                                 </div>
