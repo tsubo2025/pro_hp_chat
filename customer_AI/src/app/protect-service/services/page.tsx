@@ -391,6 +391,121 @@ export default function ProtectServicesPage() {
                     </div>
                 </section>
 
+                {/* AItuber関連サービス */}
+                <section className="py-16 bg-gray-50" id="aituber">
+                    <div className="container mx-auto px-4">
+                        <div className="max-w-4xl mx-auto">
+                            <div className="flex items-center justify-center mb-8">
+                                <div className="bg-protect-secondary rounded-full p-4 mr-4">
+                                    <svg className="w-10 h-10 text-protect-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h2 className="text-3xl font-bold">AItuber関連サービス</h2>
+                            </div>
+
+                            <p className="text-lg text-gray-700 mb-8">
+                                AItuberの活用や動画制作、AI技術の応用に関するご相談を承ります。
+                                最新のAI技術を活用したコンテンツ制作をサポートいたします。
+                            </p>
+
+                            <div className="bg-white rounded-xl p-8 mb-8">
+                                <h3 className="text-xl font-bold mb-4">サービス内容</h3>
+                                <ul className="space-y-4">
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">01.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">AItuber導入相談</h4>
+                                            <p className="text-gray-600">AItuberの基本的な仕組みから導入方法まで、初心者の方にも分かりやすくご説明します。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">02.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">動画制作サポート</h4>
+                                            <p className="text-gray-600">AItuberを活用した動画コンテンツの企画・制作をサポートします。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">03.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">AI技術活用相談</h4>
+                                            <p className="text-gray-600">ビジネスや個人活動でのAI技術の活用方法についてアドバイスします。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">04.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">配信環境構築</h4>
+                                            <p className="text-gray-600">AItuberでの配信に必要な機材やソフトウェアの選定・設定をサポートします。</p>
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="text-protect-primary mr-3 font-bold">05.</span>
+                                        <div>
+                                            <h4 className="font-bold mb-1">技術的トラブル対応</h4>
+                                            <p className="text-gray-600">AItuber関連のソフトウェアやハードウェアのトラブルに対応します。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-6 mb-8">
+                                <div className="bg-white rounded-lg shadow-md p-6">
+                                    <h3 className="text-xl font-bold mb-3">料金</h3>
+                                    <ul className="space-y-2">
+                                        <li className="flex justify-between">
+                                            <span>初回相談（60分）</span>
+                                            <span className="font-semibold">¥5,000</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>環境構築サポート</span>
+                                            <span className="font-semibold">¥15,000〜</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>動画制作サポート</span>
+                                            <span className="font-semibold">¥20,000〜</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>継続サポート</span>
+                                            <span className="font-semibold">¥10,000〜/月</span>
+                                        </li>
+                                    </ul>
+                                    <p className="text-sm text-gray-500 mt-3">※料金は内容や規模によって異なります。詳細はお問い合わせください。</p>
+                                </div>
+
+                                <div className="bg-white rounded-lg shadow-md p-6">
+                                    <h3 className="text-xl font-bold mb-3">対応可能な内容</h3>
+                                    <ul className="space-y-2">
+                                        <li className="flex items-start">
+                                            <span className="text-protect-primary mr-2">•</span>
+                                            <span>Live2D、VRoid等のアバター作成</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-protect-primary mr-2">•</span>
+                                            <span>OBS Studio等の配信ソフト設定</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-protect-primary mr-2">•</span>
+                                            <span>音声認識・合成技術の活用</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-protect-primary mr-2">•</span>
+                                            <span>YouTube、Twitch等での配信設定</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="text-center">
+                                <Link href="/protect-service/contact" className="inline-block bg-protect-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                    お問い合わせ・お見積り
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* お問い合わせセクション */}
                 <section className="py-16 bg-protect-secondary">
                     <div className="container mx-auto px-4 text-center">
